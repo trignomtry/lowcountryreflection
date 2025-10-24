@@ -54,10 +54,24 @@ img {
 }
 
 .logo {
-    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
     letter-spacing: 0.24em;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.logo img {
+    width: 52px;
+    height: 52px;
+    border-radius: 0;
+    object-fit: contain;
+}
+
+.logo span {
+    line-height: 1.2;
 }
 
 .nav-menu {
@@ -334,6 +348,16 @@ h1 {
     text-transform: uppercase;
     border-top: 1px solid var(--divider);
     background: rgba(10, 8, 6, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-brand img {
+    width: 72px;
+    border-radius: 0;
+    object-fit: contain;
 }
 
 @media (max-width: 900px) {
