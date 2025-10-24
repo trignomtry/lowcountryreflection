@@ -1,12 +1,12 @@
 :root {
-    --page-background: #0f1115;
-    --surface-dark: #151920;
-    --surface-light: #f5f7fa;
-    --primary: #ff4338;
-    --primary-dark: #d62a22;
-    --text-main: #f5f5f5;
-    --text-muted: rgba(245, 245, 245, 0.72);
-    --divider: rgba(255, 255, 255, 0.08);
+    --page-background: #080807;
+    --surface-dark: #18110a;
+    --surface-light: #f0e4c7;
+    --primary: #d9af56;
+    --primary-dark: #533915;
+    --text-main: #f5f1e8;
+    --text-muted: rgba(245, 229, 204, 0.72);
+    --divider: rgba(217, 175, 86, 0.18);
 }
 
 * {
@@ -48,7 +48,7 @@ img {
     position: sticky;
     top: 0;
     z-index: 10;
-    background: rgba(15, 17, 21, 0.85);
+    background: rgba(10, 8, 6, 0.85);
     backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--divider);
 }
@@ -125,7 +125,7 @@ img {
 
 .contact-hero,
 .pricing-hero {
-    background: linear-gradient(135deg, rgba(31, 37, 48, 0.85), rgba(19, 22, 29, 0.85));
+    background: linear-gradient(135deg, rgba(59, 42, 20, 0.85), rgba(23, 16, 9, 0.9));
     border-bottom: 1px solid var(--divider);
 }
 
@@ -173,13 +173,13 @@ h1 {
 
 .btn.primary {
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-    color: white;
-    box-shadow: 0 12px 32px rgba(255, 67, 56, 0.35);
+    color: var(--page-background);
+    box-shadow: 0 12px 32px rgba(217, 175, 86, 0.35);
 }
 
 .btn.primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 16px 36px rgba(255, 67, 56, 0.45);
+    box-shadow: 0 16px 36px rgba(217, 175, 86, 0.45);
 }
 
 .btn.ghost {
@@ -252,7 +252,7 @@ h1 {
 
 .process {
     padding: clamp(64px, 9vw, 120px) clamp(24px, 6vw, 112px);
-    background: linear-gradient(160deg, #161b24 0%, #0f1115 100%);
+    background: linear-gradient(160deg, #2b1d10 0%, #0d0a06 100%);
 }
 
 .process-steps {
@@ -265,7 +265,7 @@ h1 {
 }
 
 .process-steps li {
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(217, 175, 86, 0.04);
     border-radius: 18px;
     border: 1px solid var(--divider);
     padding: 32px;
@@ -277,7 +277,7 @@ h1 {
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: -0.04em;
-    color: rgba(255, 255, 255, 0.05);
+    color: rgba(217, 175, 86, 0.08);
     top: 16px;
     right: 24px;
 }
@@ -308,7 +308,7 @@ h1 {
 }
 
 .cta-card {
-    background: linear-gradient(135deg, #1f2530 0%, #13161d 100%);
+    background: linear-gradient(135deg, #3a2915 0%, #1b1209 100%);
     border-radius: 24px;
     border: 1px solid var(--divider);
     padding: 48px clamp(32px, 10vw, 96px);
@@ -333,7 +333,7 @@ h1 {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     border-top: 1px solid var(--divider);
-    background: rgba(15, 17, 21, 0.9);
+    background: rgba(10, 8, 6, 0.9);
 }
 
 @media (max-width: 900px) {
@@ -344,7 +344,7 @@ h1 {
         padding: 32px;
         flex-direction: column;
         gap: 24px;
-        background: rgba(15, 17, 21, 0.95);
+        background: rgba(11, 8, 6, 0.95);
         transform: translateY(-100vh);
         transition: transform 0.3s ease;
     }
@@ -441,7 +441,7 @@ h1 {
     padding: 14px 18px;
     border: 1px solid var(--divider);
     border-radius: 14px;
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(240, 228, 199, 0.06);
     color: var(--text-main);
     font-family: inherit;
     font-size: 1rem;
@@ -476,7 +476,7 @@ h1 {
 
 .pricing-card.highlighted {
     border-color: var(--primary);
-    box-shadow: 0 20px 60px rgba(255, 67, 56, 0.25);
+    box-shadow: 0 20px 60px rgba(217, 175, 86, 0.25);
 }
 
 .pricing-card h2 {
@@ -565,7 +565,7 @@ h1 {
 }
 
 .pricing-faq {
-    background: linear-gradient(135deg, rgba(31, 37, 48, 0.9), rgba(19, 22, 29, 0.9));
+    background: linear-gradient(135deg, rgba(58, 41, 20, 0.9), rgba(19, 13, 8, 0.92));
     border-radius: 24px;
     border: 1px solid var(--divider);
     padding: clamp(32px, 6vw, 64px);
