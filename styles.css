@@ -330,6 +330,28 @@ h1 {
     text-align: center;
 }
 
+.brand-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.brand-mark img {
+    width: 60px;
+    height: 60px;
+    border-radius: 0;
+    object-fit: contain;
+}
+
+.cta-card .brand-mark {
+    justify-content: center;
+}
+
 .cta-card h2 {
     margin-top: 0;
     font-size: clamp(2rem, 4vw, 3rem);
@@ -352,6 +374,13 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+}
+
+.site-footer img {
+    width: 68px;
+    height: 68px;
+    border-radius: 0;
+    object-fit: contain;
 }
 
 .footer-brand img {
