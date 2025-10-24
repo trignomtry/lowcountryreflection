@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lowcountry Reflection Detailing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #about {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">Lowcountry Reflection</div>
+        <nav class="nav-menu">
+            <a href="#about">Services</a>
+            <a href="#process">Process</a>
+            <a href="#gallery">Gallery</a>
+            <a href="pricing/index.html">Pricing</a>
+            <a href="/contact/" class="cta-link">Book Now</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Premium Auto Detailing</p>
+                <h1>Precision finishes that mirror perfection.</h1>
+                <p class="lead">Two students dedicated to making sure every detail is perfect and done right.</p>
+                <div class="hero-actions">
+                    <a href="/contact/" class="btn primary">Schedule a Detail</a>
+                    <a href="#services" class="btn ghost">Explore Services</a>
+                </div>
+            </div>
+            <div class="hero-media">
+                <img src="https://images.unsplash.com/photo-1514986888952-8cd320577b68?auto=format&fit=crop&w=800&q=80" alt="Detailer polishing a black sports car">
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">About Us</p>
+                <h2>Dedicated to precision, care, and responsibility.</h2>
+            </div>
+            <div class="service-grid">
+                <article class="about-card">
+                    <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=600&q=80" alt="Eco-friendly detailing products on a car surface">
+                    <h3>Eco-Safe Chemistry</h3>
+                    <p>We use only pH-balanced, biodegradable products that are safe for every paint type and gentle on the environment — protecting both your finish and the Lowcountry.</p>
+                </article>
+                <article class="about-card">
+                    <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&w=600&q=80" alt="Exterior detailing process with foam and polish">
+                    <h3>Exterior Process</h3>
+                    <p>From foam pre-wash to decontamination and protection, our exterior workflow delivers depth, gloss, and hydrophic coating (Full breakdown available in our pricing section.)</p>
+                </article>
+                <article class="about-card">
+                    <img src="https://images.unsplash.com/photo-1617817730638-13e019ba2cc7?auto=format&fit=crop&w=600&q=80" alt="Interior detailing with steam cleaning and conditioning">
+                    <h3>Interior Process</h3>
+                    <p>Our interior treatments combine, vacumming, UV protection, and detailing to restore your interior to its pristine condition (Full details listed in the pricing section.)</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="process" id="process">
+            <div class="section-heading">
+                <p class="eyebrow">How We Work</p>
+                <h2>A disciplined process built for performance.</h2>
+            </div>
+            <ol class="process-steps">
+                <li>
+                    <span class="step-number">01</span>
+                    <h3>Arrive</h3>
+                    <p>We come directly to your home or workplace, fully equipped and ready to work.</p>
+                </li>
+                <li>
+                    <span class="step-number">02</span>
+                    <h3>Assess</h3>
+                    <p>We inspect your vehicle to understand exactly what it needs for a flawless finish.</p>
+                </li>
+                <li>
+                    <span class="step-number">03</span>
+                    <h3>Detail</h3>
+                    <p>We perform a precision cleaning inside and out, restoring true showroom shine.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <div class="section-heading">
+                <p class="eyebrow">Recent Transformations</p>
+                <h2>Each detail engineered to turn heads.</h2>
+            </div>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1542367592-8849eb950fd8?auto=format&fit=crop&w=600&q=80" alt="Glossy black SUV after exterior detail">
+                <img src="https://images.unsplash.com/photo-1494972688394-4cc796f9e4c1?auto=format&fit=crop&w=600&q=80" alt="Detailed luxury sedan parked outdoors">
+                <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=600&q=80" alt="Polished red performance coupe in studio lighting">
+                <img src="https://images.unsplash.com/photo-1585342565166-0d36f362e42e?auto=format&fit=crop&w=600&q=80" alt="Clean interior dashboard and steering wheel">
+            </div>
+        </section>
+
+        <section class="cta" id="contact">
+            <div class="cta-card">
+                <h2>Ready for your vehicle’s next era?</h2>
+                <p>Drop us a line and lock in your detail. We respond within 24 hours.</p>
+                <a href="mailto:hello@lowcountryreflection.com" class="btn primary">Request Appointment</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Lowcountry Reflection Detailing. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const nav = document.querySelector('.nav-menu');
+        const toggle = document.querySelector('.menu-toggle');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('is-open');
+            toggle.classList.toggle('is-active');
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+        window.addEventListener('load', () => {
+            if (window.location.hash) {
+                window.scrollTo(0, 0);
+                history.replaceState(null, null, ' ');
+            }
+        });
+    </script>
+</body>
+
+</html>

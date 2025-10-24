@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Lowcountry Reflection Detailing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo"><a href="/">Lowcountry Reflection</a></div>
+        <nav class="nav-menu">
+            <a href="/index.html#about">Services</a>
+            <a href="/index.html#process">Process</a>
+            <a href="/index.html#gallery">Gallery</a>
+            <a href="/pricing/">Pricing</a>
+            <a href="/contact/" class="cta-link">Book Now</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero pricing-hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Transparent Packages</p>
+                <h1>Pricing built around your vehicle.</h1>
+                <p class="lead">Choose the package that fits your ride, budget, and finish goals. Every option includes
+                    premium products and meticulous execution.</p>
+            </div>
+            <div class="hero-media">
+                <img src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=800&q=80"
+                    alt="Polished sports car under studio lighting">
+            </div>
+        </section>
+
+        <section class="pricing-table">
+            <div class="pricing-grid">
+                <article class="pricing-card">
+                    <h2>Interior Only</h2>
+                    <p class="price">$125-150</p>
+                    <p class="price-note"> A full clean of your interior to restore clarity and shine. </p>
+                    <ul>
+                        <li>Full car vacuumed and all carpets cleaned</li>
+                        <li>Full spray and scrub of all interior surfaces</li>
+                        <li>Seats sprayed and cleaned</li>
+                        <li>Protective UV coating added to all surfaces prevent damage</li>
+                        <li>All windows cleaned streak free</li>
+                    </ul>
+                    <a href="/contact/" class="btn primary">Book an exterior detail</a>
+                </article>
+                <article class="pricing-card highlighted">
+                    <h2>Interior and Exterior complete detail</h2>
+                    <p class="price">$200-250</p>
+                    <p class="price-note">Our most popular full interior &amp; exterior restoration service.</p>
+                    <ul>
+                        <li>Full car vacuumed and all carpets cleaned</li>
+                        <li>Full spray and scrub of all interior surfaces</li>
+                        <li>Seats sprayed and cleaned</li>
+                        <li>Protective UV coating added to all surfaces prevent damage</li>
+                        <li>All windows cleaned streak free</li>
+                        <li>Door Jambs Cleaned</li>
+                        <li>Full hand wash using two bucket method,</li>
+                        <li>Tires Cleaned and Dressed all brake dust removed</li>
+                        <li>Windows / Windshield Cleaned Streak Free (Exterior)</li>
+                        <li>Door Jams Cleaned</li>
+                        <li>Graphene Protection applied to the car giving a glossy finish and protection from dirt</li>
+                    </ul>
+                    <a href="/contact/" class="btn primary">Book a complete detail</a>
+                </article>
+                <article class="pricing-card">
+                    <h2>Exterior Shine</h2>
+                    <p class="price">$85-100</p>
+                    <p class="price-note">A complete clean of the exterior to make it shine.</p>
+                    <ul>
+                        <li>Windows / Windshield Cleaned Streak Free (Exterior)</li>
+                        <li>Tires Cleaned and Dressed all brake dust removed</li>
+                        <li>Full hand wash using two bucket method,</li>
+                        <li>Graphene Protection applied to the car giving a glossy finish and protection from dirt</li>
+                    </ul>
+                    <a href="/contact/" class="btn primary">Book a interior detail</a>
+                </article>
+            </div>
+
+            <div class="pricing-addons">
+                <h2>Enhancement Add-Ons</h2>
+                <p>Layer specialty services onto any package to target stubborn contaminants and restore clarity.</p>
+                <div class="addons-grid">
+                    <article class="addon-card">
+                        <h3>Paint Decontamination</h3>
+                        <p class="addon-price">+$50-$75</p>
+                        <p>A full paint decontamination to remove the build up of iron particles and keep your paint shiny.</p>
+                    </article>
+                    <article class="addon-card">
+                        <h3>Headlight Restoration</h3>
+                        <p class="addon-price">+$59</p>
+                        <p>A full restoeration of your headlights with added ceramic coating to restore shine and keep them protected</p>
+                    </article>
+                    <article class="addon-card">
+                        <h3>Door Jamb Detail</h3>
+                        <p class="addon-price">+$25</p>
+                        <p>Deep clean and dress door jambs, hinges, and seals to eliminate grime build-up.</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="pricing-faq">
+                <h2>Need a custom quote?</h2>
+                <p>Send us an email with your make, model, year, and detatailing goals and we'll get back within 24 hours!</p>
+                <a href="mailto:lowcountryreflectiondetailing@gmail.com" class="btn ghost">Email Us Details</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Lowcountry Reflection Detailing. All rights reserved.</p>
+    </footer>
+
+</script>
+    <script>
+        const nav = document.querySelector('.nav-menu');
+        const toggle = document.querySelector('.menu-toggle');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('is-open');
+            toggle.classList.toggle('is-active');
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+        window.addEventListener('load', () => {
+            window.scrollTo(0, 0);
+        });
+    </script>
+</body>
+
+</html>

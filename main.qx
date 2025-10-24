@@ -1,0 +1,3 @@
+io.listen(6767, fun(req: Request) {
+    return io.web().file("." + req.path)
+})

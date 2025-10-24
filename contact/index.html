@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Lowcountry Reflection Detailing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo"><a href="/">Lowcountry Reflection</a></div>
+        <nav class="nav-menu">
+            <a href="/index.html#services">Services</a>
+            <a href="/index.html#process">Process</a>
+            <a href="/pricing/">Pricing</a>
+            <a href="/index.html#gallery">Gallery</a>
+            <a href="/contact/" class="cta-link">Book Now</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero contact-hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Let’s Build Your Detail Plan</p>
+                <h1>Ready when you are.</h1>
+                <p class="lead">Call or email with your vehicle details and detailing goals. We’ll follow up within 24
+                    hours with availability and a tailored quote.</p>
+            </div>
+            <div class="hero-media">
+                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80"
+                    alt="Detailers reviewing a vehicle checklist">
+            </div>
+        </section>
+
+        <section class="contact-details">
+            <div class="contact-card">
+                <h2>Contact Information</h2>
+                <p>Email us anytime or call during 8am–6pm.</p>
+                <ul>
+                    <li><strong>Email:</strong> <a
+                            href="mailto:lowcountryreflectiondetailing@gmail.com">lowcountryreflectiondetailing@gmail.com</a>
+                    </li>
+                    <li><strong>Phone:</strong> <a href="tel:+18432847905">(843)-284-7905</a></li>
+                    <li><strong>Service Area:</strong> Charleston, Mount Pleasant, Isle of Palms, and surrounding
+                        Lowcountry communities</li>
+                </ul>
+            </div>
+            <div class="contact-card">
+                <h2>How Booking Works</h2>
+                <p>Reach out with:</p>
+                <ul>
+                    <li>Vehicle make, model, and year</li>
+                    <li>Desired packages or problem areas</li>
+                    <li>Preferred days and location</li>
+                </ul>
+                <p>We’ll confirm scheduling options and finalize the plan together.</p>
+                <div class="hero-actions">
+                    <a href="tel:+18432129500" class="btn primary">Call (843) 212-9500</a>
+                    <a href="mailto:hello@lowcountryreflection.com" class="btn ghost">Email Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Lowcountry Reflection Detailing. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const nav = document.querySelector('.nav-menu');
+        const toggle = document.querySelector('.menu-toggle');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('is-open');
+            toggle.classList.toggle('is-active');
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
