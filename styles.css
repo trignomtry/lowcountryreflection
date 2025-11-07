@@ -154,6 +154,7 @@ img {
         rgba(23, 16, 9, 0.9)
     );
     border-bottom: 1px solid var(--divider);
+    padding-top: 40px;
 }
 
 .hero-copy {
