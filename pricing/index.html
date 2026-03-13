@@ -135,18 +135,29 @@
                 "itemListElement": [
                     {
                         "@type": "Offer",
-                        "name": "Interior Only Detail",
-                        "description": "Full interior vacuum, scrub, UV protection, and streak-free glass.",
+                        "name": "Basic Detail",
+                        "description": "Essential interior and exterior maintenance including hand wash, vacuum, and wipe down.",
+                        "priceCurrency": "USD",
+                        "price": 99,
+                        "itemOffered": {
+                            "@type": "Service",
+                            "serviceType": "Basic Detailing"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "Interior OR Exterior Only",
+                        "description": "Choose between a full interior restoration or a premium exterior shine.",
                         "priceCurrency": "USD",
                         "priceSpecification": {
                             "@type": "PriceSpecification",
                             "priceCurrency": "USD",
-                            "minPrice": 125,
+                            "minPrice": 85,
                             "maxPrice": 150
                         },
                         "itemOffered": {
                             "@type": "Service",
-                            "serviceType": "Interior Detailing"
+                            "serviceType": "Individual Service"
                         }
                     },
                     {
@@ -157,28 +168,11 @@
                         "priceSpecification": {
                             "@type": "PriceSpecification",
                             "priceCurrency": "USD",
-                            "minPrice": 200,
-                            "maxPrice": 250
+                            "price": 249
                         },
                         "itemOffered": {
                             "@type": "Service",
                             "serviceType": "Interior and Exterior Detailing"
-                        }
-                    },
-                    {
-                        "@type": "Offer",
-                        "name": "Exterior Shine Detail",
-                        "description": "Two-bucket wash, tire care, streak-free glass, and graphene protection.",
-                        "priceCurrency": "USD",
-                        "priceSpecification": {
-                            "@type": "PriceSpecification",
-                            "priceCurrency": "USD",
-                            "minPrice": 85,
-                            "maxPrice": 100
-                        },
-                        "itemOffered": {
-                            "@type": "Service",
-                            "serviceType": "Exterior Detailing"
                         }
                     }
                 ]
@@ -196,9 +190,9 @@
                 <span>Lowcountry Reflection</span>
             </a>
             <nav class="nav-menu">
-                <a href="/index.html#about">Services</a>
-                <a href="/index.html#process">Process</a>
-                <a href="/index.html#gallery">Gallery</a>
+                <a href="/#services">Services</a>
+                <a href="/#process">Process</a>
+                <a href="/#gallery">Gallery</a>
                 <a href="/pricing/">Pricing</a>
                 <a href="/contact/" class="cta-link">Book Now</a>
             </nav>
@@ -238,30 +232,50 @@
             <section class="pricing-table">
                 <div class="pricing-grid">
                     <article class="pricing-card">
-                        <h2>Interior Only</h2>
-                        <p class="price">$125-150</p>
+                        <h2>Basic Detail</h2>
+                        <p class="price">$99</p>
                         <p class="price-note">
-                            A full interior clean to restore clarity and shine.
+                            Essential maintenance for a clean look inside and
+                            out.
                         </p>
                         <ul>
-                            <li>Full car vacuumed and all carpets cleaned</li>
+                            <li>Full hand wash and tire cleaning</li>
+                            <li>Full car vacuumed (carpets & seats)</li>
+                            <li>Dashboard and console wipe down</li>
                             <li>
-                                Full spray and scrub of all interior surfaces
+                                All windows cleaned streak-free (inside & out)
                             </li>
-                            <li>Seats sprayed and cleaned</li>
-                            <li>
-                                Protective UV coating added to all surfaces to
-                                prevent damage
-                            </li>
-                            <li>All windows cleaned streak-free</li>
+                            <li>Door jambs cleaned</li>
+                            <li>Spray sealant for paint protection</li>
                         </ul>
                         <a href="/contact/" class="btn primary"
-                            >Book an interior detail</a
+                            >Book a basic detail</a
+                        >
+                    </article>
+                    <article class="pricing-card">
+                        <h2>Interior OR Exterior</h2>
+                        <p class="price">$85-150</p>
+                        <p class="price-note">
+                            Focus on either the inside or outside of your
+                            vehicle.
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>Interior ($125-150):</strong> Vacuum,
+                                scrub, seats, windows, and door jambs.
+                            </li>
+                            <li>
+                                <strong>Exterior ($85-100):</strong> Hand wash,
+                                tires/wheels, windows, graphene, and door jambs.
+                            </li>
+                        </ul>
+                        <a href="/contact/" class="btn primary"
+                            >Book an individual service</a
                         >
                     </article>
                     <article class="pricing-card highlighted">
                         <h2>Complete Interior &amp; Exterior Detail</h2>
-                        <p class="price">$200-250</p>
+                        <p class="price">$249</p>
                         <p class="price-note">
                             Our most popular full interior &amp; exterior
                             restoration service.
@@ -272,10 +286,6 @@
                                 Full spray and scrub of all interior surfaces
                             </li>
                             <li>Seats sprayed and cleaned</li>
-                            <li>
-                                Protective UV coating added to all surfaces to
-                                prevent damage
-                            </li>
                             <li>All windows cleaned streak-free</li>
                             <li>Full hand wash using the two-bucket method</li>
                             <li>
@@ -294,31 +304,6 @@
                         </ul>
                         <a href="/contact/" class="btn primary"
                             >Book a complete detail</a
-                        >
-                    </article>
-                    <article class="pricing-card">
-                        <h2>Exterior Shine</h2>
-                        <p class="price">$85-100</p>
-                        <p class="price-note">
-                            A complete clean of the exterior to make it shine.
-                        </p>
-                        <ul>
-                            <li>
-                                Windows and windshield cleaned streak-free
-                                (exterior)
-                            </li>
-                            <li>
-                                Tires cleaned and dressed; all brake dust
-                                removed
-                            </li>
-                            <li>Full hand wash using the two-bucket method</li>
-                            <li>
-                                Graphene protection applied to the car, giving a
-                                glossy finish and shielding against dirt
-                            </li>
-                        </ul>
-                        <a href="/contact/" class="btn primary"
-                            >Book an interior detail</a
                         >
                     </article>
                 </div>
@@ -346,14 +331,6 @@
                                 A full restoration of your headlights with added
                                 ceramic coating to restore shine and keep them
                                 protected.
-                            </p>
-                        </article>
-                        <article class="addon-card">
-                            <h3>Door Jamb Detail</h3>
-                            <p class="addon-price">+$25</p>
-                            <p>
-                                Deep clean and dress door jambs, hinges, and
-                                seals to eliminate grime build-up.
                             </p>
                         </article>
                     </div>
@@ -391,11 +368,6 @@
             });
             document.getElementById("year").textContent =
                 new Date().getFullYear();
-        </script>
-        <script>
-            window.addEventListener("load", () => {
-                window.scrollTo(0, 0);
-            });
         </script>
     </body>
 </html>
